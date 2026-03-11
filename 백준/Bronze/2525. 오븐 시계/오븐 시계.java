@@ -21,6 +21,8 @@ public class Main{
         int min = (a * 60 + b) ;
         min += c;   // 1070 분 + 입력값 80 ===> 1150
 
+
+//        int hour = (min / 60);    24시 부터 00으로 표기해야해서 나머지 연산 작업하면 25 % 24 는 1이됨
         int hour = (min / 60) % 24;
         int minute = min % 60;
 
